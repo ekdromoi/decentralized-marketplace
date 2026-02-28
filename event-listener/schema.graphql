@@ -1,0 +1,28 @@
+type Seller @entity(immutable: true) {
+  id: Bytes!
+  name: String! 
+  email: String! 
+  phone: String! 
+  city: String! 
+  country: String! 
+  streetAddress: String! 
+
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type Product @entity(immutable: true) {
+  id: Bytes!
+  sellerId: BigInt! 
+  seller: Seller!
+  category: Int! 
+  description: String! 
+  price: String! 
+  isDeleted: Boolean!
+  isSold: Boolean!
+
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}

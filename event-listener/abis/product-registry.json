@@ -1,0 +1,293 @@
+[
+  {
+    "type": "function",
+    "name": "addProduct",
+    "inputs": [
+      {
+        "name": "product",
+        "type": "tuple",
+        "internalType": "struct ProductRegistry.Product",
+        "components": [
+          { "name": "id", "type": "uint256", "internalType": "uint256" },
+          { "name": "sellerId", "type": "uint256", "internalType": "uint256" },
+          {
+            "name": "category",
+            "type": "uint8",
+            "internalType": "enum ProductRegistry.Category"
+          },
+          { "name": "description", "type": "string", "internalType": "string" },
+          { "name": "price", "type": "string", "internalType": "string" },
+          { "name": "isDeleted", "type": "bool", "internalType": "bool" },
+          { "name": "isSold", "type": "bool", "internalType": "bool" }
+        ]
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "addSeller",
+    "inputs": [
+      {
+        "name": "seller",
+        "type": "tuple",
+        "internalType": "struct ProductRegistry.Seller",
+        "components": [
+          { "name": "id", "type": "uint256", "internalType": "uint256" },
+          {
+            "name": "sellerAddress",
+            "type": "address",
+            "internalType": "address"
+          },
+          { "name": "name", "type": "string", "internalType": "string" },
+          { "name": "email", "type": "string", "internalType": "string" },
+          { "name": "phone", "type": "string", "internalType": "string" },
+          { "name": "city", "type": "string", "internalType": "string" },
+          { "name": "country", "type": "string", "internalType": "string" },
+          {
+            "name": "streetAddress",
+            "type": "string",
+            "internalType": "string"
+          },
+          { "name": "isBlacklisted", "type": "bool", "internalType": "bool" }
+        ]
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "blacklistSeller",
+    "inputs": [{ "name": "id", "type": "uint256", "internalType": "uint256" }],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "deleteProduct",
+    "inputs": [{ "name": "id", "type": "uint256", "internalType": "uint256" }],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "getProduct",
+    "inputs": [{ "name": "id", "type": "uint256", "internalType": "uint256" }],
+    "outputs": [
+      {
+        "name": "",
+        "type": "tuple",
+        "internalType": "struct ProductRegistry.Product",
+        "components": [
+          { "name": "id", "type": "uint256", "internalType": "uint256" },
+          { "name": "sellerId", "type": "uint256", "internalType": "uint256" },
+          {
+            "name": "category",
+            "type": "uint8",
+            "internalType": "enum ProductRegistry.Category"
+          },
+          { "name": "description", "type": "string", "internalType": "string" },
+          { "name": "price", "type": "string", "internalType": "string" },
+          { "name": "isDeleted", "type": "bool", "internalType": "bool" },
+          { "name": "isSold", "type": "bool", "internalType": "bool" }
+        ]
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "getSeller",
+    "inputs": [{ "name": "id", "type": "uint256", "internalType": "uint256" }],
+    "outputs": [
+      {
+        "name": "",
+        "type": "tuple",
+        "internalType": "struct ProductRegistry.Seller",
+        "components": [
+          { "name": "id", "type": "uint256", "internalType": "uint256" },
+          {
+            "name": "sellerAddress",
+            "type": "address",
+            "internalType": "address"
+          },
+          { "name": "name", "type": "string", "internalType": "string" },
+          { "name": "email", "type": "string", "internalType": "string" },
+          { "name": "phone", "type": "string", "internalType": "string" },
+          { "name": "city", "type": "string", "internalType": "string" },
+          { "name": "country", "type": "string", "internalType": "string" },
+          {
+            "name": "streetAddress",
+            "type": "string",
+            "internalType": "string"
+          },
+          { "name": "isBlacklisted", "type": "bool", "internalType": "bool" }
+        ]
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "markProductAsSold",
+    "inputs": [{ "name": "id", "type": "uint256", "internalType": "uint256" }],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "products",
+    "inputs": [{ "name": "", "type": "uint256", "internalType": "uint256" }],
+    "outputs": [
+      { "name": "id", "type": "uint256", "internalType": "uint256" },
+      { "name": "sellerId", "type": "uint256", "internalType": "uint256" },
+      {
+        "name": "category",
+        "type": "uint8",
+        "internalType": "enum ProductRegistry.Category"
+      },
+      { "name": "description", "type": "string", "internalType": "string" },
+      { "name": "price", "type": "string", "internalType": "string" },
+      { "name": "isDeleted", "type": "bool", "internalType": "bool" },
+      { "name": "isSold", "type": "bool", "internalType": "bool" }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "sellers",
+    "inputs": [{ "name": "", "type": "uint256", "internalType": "uint256" }],
+    "outputs": [
+      { "name": "id", "type": "uint256", "internalType": "uint256" },
+      { "name": "sellerAddress", "type": "address", "internalType": "address" },
+      { "name": "name", "type": "string", "internalType": "string" },
+      { "name": "email", "type": "string", "internalType": "string" },
+      { "name": "phone", "type": "string", "internalType": "string" },
+      { "name": "city", "type": "string", "internalType": "string" },
+      { "name": "country", "type": "string", "internalType": "string" },
+      { "name": "streetAddress", "type": "string", "internalType": "string" },
+      { "name": "isBlacklisted", "type": "bool", "internalType": "bool" }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "unblacklistSeller",
+    "inputs": [{ "name": "id", "type": "uint256", "internalType": "uint256" }],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "event",
+    "name": "ProductDeleted",
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "ProductEvent",
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      },
+      {
+        "name": "sellerId",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      },
+      {
+        "name": "category",
+        "type": "uint8",
+        "indexed": false,
+        "internalType": "enum ProductRegistry.Category"
+      },
+      {
+        "name": "description",
+        "type": "string",
+        "indexed": false,
+        "internalType": "string"
+      },
+      {
+        "name": "price",
+        "type": "string",
+        "indexed": false,
+        "internalType": "string"
+      },
+      {
+        "name": "isDeleted",
+        "type": "bool",
+        "indexed": false,
+        "internalType": "bool"
+      },
+      {
+        "name": "isSold",
+        "type": "bool",
+        "indexed": false,
+        "internalType": "bool"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "SellerAdded",
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "indexed": false,
+        "internalType": "string"
+      },
+      {
+        "name": "email",
+        "type": "string",
+        "indexed": false,
+        "internalType": "string"
+      },
+      {
+        "name": "phone",
+        "type": "string",
+        "indexed": false,
+        "internalType": "string"
+      },
+      {
+        "name": "city",
+        "type": "string",
+        "indexed": false,
+        "internalType": "string"
+      },
+      {
+        "name": "country",
+        "type": "string",
+        "indexed": false,
+        "internalType": "string"
+      },
+      {
+        "name": "streetAddress",
+        "type": "string",
+        "indexed": false,
+        "internalType": "string"
+      }
+    ],
+    "anonymous": false
+  }
+]

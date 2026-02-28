@@ -1,0 +1,8 @@
+{
+  "base-sepolia": {
+    "product-registry": {
+      "address": "0xcfbe4ba24cef57f5572bfed92901d0e9082a7c7d",
+      "startBlock": 38227116
+    }
+  }
+}

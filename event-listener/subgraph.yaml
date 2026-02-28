@@ -1,0 +1,32 @@
+specVersion: 1.0.0
+indexerHints:
+  prune: auto
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: product-registry
+    network: base-sepolia
+    source:
+      address: "0xcfbe4ba24cef57f5572bfed92901d0e9082a7c7d"
+      abi: product-registry
+      startBlock: 38227116
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - ProductDeleted
+        - ProductEvent
+        - SellerAdded
+      abis:
+        - name: product-registry
+          file: ./abis/product-registry.json
+      eventHandlers:
+        - event: ProductDeleted(uint256)
+          handler: handleProductDeleted
+        - event: ProductEvent(uint256,uint256,uint8,string,string,bool,bool)
+          handler: handleProductEvent
+        - event: SellerAdded(uint256,string,string,string,string,string,string)
+          handler: handleSellerAdded
+      file: ./src/product-registry.ts
