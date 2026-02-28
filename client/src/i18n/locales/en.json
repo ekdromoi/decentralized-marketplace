@@ -1,0 +1,24 @@
+{
+  "APP": {
+    "NAME": "Marketplace"
+  },
+  "NAV": {
+    "NAVIGATION": "Navigation",
+    "GENERAL": "General",
+    "HOME": "Home",
+    "PRODUCTS": "Products",
+    "ORDERS": "Orders",
+    "CUSTOMERS": "Customers",
+    "SETTINGS": "Settings"
+  },
+  "PRODUCTS": {
+    "TITLE": "Products"
+  },
+  "LANGUAGE": {
+    "TOGGLE": "العربية"
+  },
+  "THEME": {
+    "LIGHT": "Light Mode",
+    "DARK": "Dark Mode"
+  }
+}

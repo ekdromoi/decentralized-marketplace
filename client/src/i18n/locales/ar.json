@@ -1,0 +1,24 @@
+{
+  "APP": {
+    "NAME": "السوق"
+  },
+  "NAV": {
+    "NAVIGATION": "التنقل",
+    "GENERAL": "عام",
+    "HOME": "الرئيسية",
+    "PRODUCTS": "المنتجات",
+    "ORDERS": "الطلبات",
+    "CUSTOMERS": "العملاء",
+    "SETTINGS": "الإعدادات"
+  },
+  "PRODUCTS": {
+    "TITLE": "المنتجات"
+  },
+  "LANGUAGE": {
+    "TOGGLE": "English"
+  },
+  "THEME": {
+    "LIGHT": "الوضع الفاتح",
+    "DARK": "الوضع الداكن"
+  }
+}
