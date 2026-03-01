@@ -34,8 +34,8 @@ export const Sidebar = () => {
   };
 
   return (
-    <SidebarPrimitive side={i18n.language === "ar" ? "right" : "left"}>
-      <SidebarHeader>
+    <SidebarPrimitive collapsible="icon" side={i18n.language === "ar" ? "right" : "left"}>
+      <SidebarHeader className="h-[56px]">
         <span className="text-lg font-semibold px-2">{t("APP.NAME")}</span>
       </SidebarHeader>
       <SidebarContent>

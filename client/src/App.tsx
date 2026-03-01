@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { Routes, Route } from 'react-router-dom'
 import { SidebarProvider, SidebarInset } from './components/ui/sidebar'
 import { Sidebar } from './components/sidebar/sidebar'
+import { Navbar } from './components/navbar/navbar'
 import { ThemeProvider } from './context/theme'
 import { ProductsScreen } from './screens/products.screen'
 
@@ -20,9 +21,12 @@ function App() {
       <SidebarProvider>
         <Sidebar />
         <SidebarInset>
-          <Routes>
-            <Route path="/" element={<ProductsScreen />} />
-          </Routes>
+          <Navbar />
+          <main className="flex-1 p-4">
+            <Routes>
+              <Route path="/" element={<ProductsScreen />} />
+            </Routes>
+          </main>
         </SidebarInset>
       </SidebarProvider>
     </ThemeProvider>

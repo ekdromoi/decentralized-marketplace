@@ -17,8 +17,26 @@
   "LANGUAGE": {
     "TOGGLE": "العربية"
   },
+  "LOCATION": {
+    "RIYADH": "Riyadh",
+    "JEDDAH": "Jeddah",
+    "DAMMAM": "Dammam",
+    "MECCA": "Mecca",
+    "MEDINA": "Medina"
+  },
+  "CATEGORY": {
+    "ALL": "All",
+    "LUXURY_WATCHES": "Luxury Watches",
+    "FINE_JEWELLERY": "Fine Jewellery",
+    "FINE_ART": "Fine Art",
+    "AUTOMOTIVE": "Automotive",
+    "COLLECTIBLES": "Collectibles",
+    "ANTIQUES": "Antiques",
+    "OTHER": "Other"
+  },
   "THEME": {
     "LIGHT": "Light Mode",
     "DARK": "Dark Mode"
-  }
+  },
+  "POPULAR_LOCATIONS": "Popular Locations"
 }

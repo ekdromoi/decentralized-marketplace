@@ -17,6 +17,23 @@
   "LANGUAGE": {
     "TOGGLE": "English"
   },
+  "LOCATION": {
+    "RIYADH": "الرياض",
+    "JEDDAH": "جدة",
+    "DAMMAM": "الدمام",
+    "MECCA": "مكة المكرمة",
+    "MEDINA": "المدينة المنورة"
+  },
+  "CATEGORY": {
+    "ALL": "الكل",
+    "LUXURY_WATCHES": "ساعات فاخرة",
+    "FINE_JEWELLERY": "مجوهرات راقية",
+    "FINE_ART": "فنون جميلة",
+    "AUTOMOTIVE": "سيارات",
+    "COLLECTIBLES": "مقتنيات",
+    "ANTIQUES": "تحف",
+    "OTHER": "أخرى"
+  },
   "THEME": {
     "LIGHT": "الوضع الفاتح",
     "DARK": "الوضع الداكن"
